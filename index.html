@@ -59,6 +59,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hira
 .nav-bottom a{text-decoration:none;font-size:11px;color:#888;text-align:center;display:flex;flex-direction:column;align-items:center;gap:2px}
 .nav-bottom a .ni{font-size:18px}
 .nav-bottom a.active{color:#0077b6}
+.food-item{background:#f8f9fa;border-radius:8px;padding:12px;margin-bottom:10px}
+.food-item:last-child{margin-bottom:0}
+.food-name{font-size:14px;font-weight:600;margin-bottom:2px}
+.food-addr{font-size:12px;color:#888;margin-bottom:4px}
+.food-desc{font-size:13px;color:#555}
+.food-must{display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;margin-top:6px;background:#fff3e0;color:#e65100;font-weight:500}
+.food-area{font-size:13px;font-weight:600;color:#0077b6;padding:10px 0 6px;border-bottom:1px solid #f0f0f0;margin-bottom:10px}
+.food-area:first-child{padding-top:0}
+.hotel-price{font-size:12px;color:#0077b6;font-weight:600;margin-top:2px}
+.hotel-area{font-size:13px;font-weight:600;color:#c62828;padding:10px 0 6px;border-bottom:1px solid #f0f0f0;margin-bottom:10px}
+.hotel-area:first-child{padding-top:0}
 </style>
 </head>
 <body>
@@ -82,29 +93,168 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hira
   </div>
 </div>
 
+<!-- 住宿详细推荐 -->
 <div class="section">
   <div class="section-header">
-    <div class="icon" style="background:#fce4ec;color:#c62828">🏨</div>
-    <div><h2>住宿（华住会）</h2><div class="sub">推荐住思明区中山路附近，3晚同一家</div></div>
+    <div class="icon" style="background:#e8eaf6;color:#5c6bc0">🛏️</div>
+    <div><h2>住宿推荐（华住会）</h2><div class="sub">按区域 · 按预算</div></div>
   </div>
   <div class="section-body">
+    <div class="hotel-area">📍 中山路 / 轮渡（最方便，推荐首选）</div>
     <div class="hotel-card">
       <div class="hotel-name">全季酒店（中山路步行街思明南路店）</div>
       <div class="hotel-addr">📍 思明南路158号 定安广场4楼</div>
       <div class="hotel-addr">⭐ 4.7分 · 距地铁镇海路站100米</div>
+      <div class="hotel-price">约 ¥250-350/晚</div>
       <span class="hotel-tag tag-recommend">性价比首选</span>
     </div>
     <div class="hotel-card">
       <div class="hotel-name">桔子酒店（中山路步行街店）</div>
       <div class="hotel-addr">📍 思明南路135号 中华城北区4楼</div>
-      <div class="hotel-addr">⭐ 4.6分 · 设计感好</div>
-      <span class="hotel-tag tag-budget">中档偏上</span>
+      <div class="hotel-addr">⭐ 4.6分 · 设计感好，年轻人喜欢</div>
+      <div class="hotel-price">约 ¥280-380/晚</div>
+      <span class="hotel-tag tag-budget">中档设计</span>
     </div>
     <div class="hotel-card">
       <div class="hotel-name">美居酒店（中山路步行街海景店）</div>
       <div class="hotel-addr">📍 鹭江道96号</div>
-      <div class="hotel-addr">⭐ 正对鼓浪屿 · 有海景房</div>
-      <span class="hotel-tag tag-premium">体验最佳</span>
+      <div class="hotel-addr">⭐ 正对鼓浪屿 · 海景房直接看日落</div>
+      <div class="hotel-price">约 ¥450-650/晚</div>
+      <span class="hotel-tag tag-premium">海景体验最佳</span>
+    </div>
+    <div class="hotel-card">
+      <div class="hotel-name">汉庭酒店（中山路步行街店）</div>
+      <div class="hotel-addr">📍 中山路附近，步行可达各景点</div>
+      <div class="hotel-addr">⭐ 经济实惠，干净整洁</div>
+      <div class="hotel-price">约 ¥180-260/晚</div>
+      <span class="hotel-tag" style="background:#e8f5e9;color:#2e7d32">省钱之选</span>
+    </div>
+
+    <div class="hotel-area">📍 曾厝垵 / 环岛路（文艺海边风）</div>
+    <div class="hotel-card">
+      <div class="hotel-name">全季酒店（厦门曾厝垵店）</div>
+      <div class="hotel-addr">📍 曾厝垵附近，靠近环岛路海边</div>
+      <div class="hotel-addr">⭐ 出门就是沙滩和文艺小巷</div>
+      <div class="hotel-price">约 ¥260-360/晚</div>
+      <span class="hotel-tag tag-recommend">海边文艺</span>
+    </div>
+    <div class="hotel-card">
+      <div class="hotel-name">桔子酒店（厦门环岛路会展中心店）</div>
+      <div class="hotel-addr">📍 环岛路沿线，近会展中心</div>
+      <div class="hotel-addr">⭐ 海景视野好，适合骑行出发</div>
+      <div class="hotel-price">约 ¥300-400/晚</div>
+      <span class="hotel-tag tag-budget">环岛路沿线</span>
+    </div>
+
+    <div class="tip-box">
+      <strong>💡 建议：</strong>3月非旺季，提前在华住会APP订会员价更便宜。住中山路附近最方便，去鼓浪屿、八市、南普陀都近。
+    </div>
+  </div>
+</div>
+
+<!-- 美食推荐 -->
+<div class="section">
+  <div class="section-header">
+    <div class="icon" style="background:#fff3e0;color:#e65100">🍜</div>
+    <div><h2>美食推荐</h2><div class="sub">按区域整理 · 本地人也爱去</div></div>
+  </div>
+  <div class="section-body">
+    <div class="food-area">🔥 中山路 / 八市片区</div>
+    <div class="food-item">
+      <div class="food-name">局口拌面</div>
+      <div class="food-addr">📍 局口街（中山路旁小巷）</div>
+      <div class="food-desc">厦门老字号，花生酱拌面是灵魂，配一碗扁食汤绝了</div>
+      <span class="food-must">必吃</span>
+    </div>
+    <div class="food-item">
+      <div class="food-name">阿杰五香</div>
+      <div class="food-addr">📍 大同路49号</div>
+      <div class="food-desc">炸五香卷外酥里嫩，蘸甜辣酱，排队也值得</div>
+      <span class="food-must">必吃</span>
+    </div>
+    <div class="food-item">
+      <div class="food-name">黄则和花生汤店</div>
+      <div class="food-addr">📍 中山路22-24号</div>
+      <div class="food-desc">百年老店，花生汤甜而不腻，配油条是厦门经典早餐</div>
+      <span class="food-must">必吃</span>
+    </div>
+    <div class="food-item">
+      <div class="food-name">莲欢海蛎煎</div>
+      <div class="food-addr">📍 局口街横巷</div>
+      <div class="food-desc">海蛎煎外焦里嫩，鸡蛋和海蛎的比例刚好，酱料是点睛之笔</div>
+    </div>
+    <div class="food-item">
+      <div class="food-name">八市海鲜（第八菜市场）</div>
+      <div class="food-addr">📍 开禾路/营平路一带</div>
+      <div class="food-desc">买完海鲜直接找旁边大排档加工，新鲜便宜。推荐酱油水煮杂鱼、白灼虾</div>
+      <span class="food-must">必体验</span>
+    </div>
+    <div class="food-item">
+      <div class="food-name">乌糖沙茶面</div>
+      <div class="food-addr">📍 民族路60号</div>
+      <div class="food-desc">厦门沙茶面天花板之一，汤底浓郁，加猪肝、鱿鱼、豆腐最经典</div>
+      <span class="food-must">必吃</span>
+    </div>
+    <div class="food-item">
+      <div class="food-name">大同鸭肉粥</div>
+      <div class="food-addr">📍 大同路</div>
+      <div class="food-desc">鸭肉嫩滑，粥底鲜甜，本地人的深夜食堂</div>
+    </div>
+
+    <div class="food-area">🏝️ 鼓浪屿</div>
+    <div class="food-item">
+      <div class="food-name">叶氏麻糍</div>
+      <div class="food-addr">📍 龙头路（路边摊车）</div>
+      <div class="food-desc">现做糯米麻糍裹花生碎和芝麻，软糯香甜，1块钱一个</div>
+      <span class="food-must">必吃</span>
+    </div>
+    <div class="food-item">
+      <div class="food-name">林记鱼丸</div>
+      <div class="food-addr">📍 龙头路</div>
+      <div class="food-desc">鲨鱼丸Q弹有嚼劲，汤鲜味美</div>
+    </div>
+    <div class="food-item">
+      <div class="food-name">赵小姐的店</div>
+      <div class="food-addr">📍 龙头路</div>
+      <div class="food-desc">网红店，馅饼和凤梨酥适合当伴手礼</div>
+    </div>
+    <div class="food-item">
+      <div class="food-name">Babycat私家御饼屋</div>
+      <div class="food-addr">📍 龙头路143号</div>
+      <div class="food-desc">绿豆馅饼是招牌，酥皮入口即化</div>
+    </div>
+
+    <div class="food-area">🎨 曾厝垵</div>
+    <div class="food-item">
+      <div class="food-name">三年二班奶茶</div>
+      <div class="food-addr">📍 曾厝垵文创村内</div>
+      <div class="food-desc">教室主题奶茶店，拍照打卡有意思</div>
+    </div>
+    <div class="food-item">
+      <div class="food-name">沙茶面 / 烧仙草 / 土笋冻</div>
+      <div class="food-addr">📍 曾厝垵主街各摊位</div>
+      <div class="food-desc">边走边吃，土笋冻是厦门特色（胶原蛋白虫做的冻，勇敢的试试）</div>
+    </div>
+    <div class="food-item">
+      <div class="food-name">各种海鲜烧烤大排档</div>
+      <div class="food-addr">📍 曾厝垵沿街</div>
+      <div class="food-desc">傍晚开始热闹，烤生蚝、扇贝、鱿鱼，配啤酒吹海风</div>
+    </div>
+
+    <div class="food-area">🎓 厦大 / 南普陀附近</div>
+    <div class="food-item">
+      <div class="food-name">南普陀素菜馆</div>
+      <div class="food-addr">📍 南普陀寺内</div>
+      <div class="food-desc">寺庙素菜馆，半月沉江、当归面线是招牌，人均40-60</div>
+    </div>
+    <div class="food-item">
+      <div class="food-name">厦大学生餐厅（勤业/芙蓉）</div>
+      <div class="food-addr">📍 厦门大学校内</div>
+      <div class="food-desc">如果预约进了厦大，可以体验学生食堂，便宜大碗</div>
+    </div>
+
+    <div class="tip-box">
+      <strong>💡 吃货tips：</strong>厦门小吃以闽南风味为主，沙茶面、海蛎煎、花生汤、五香卷是四大必吃。八市是最接地气的地方，建议安排一顿海鲜大排档。
     </div>
   </div>
 </div>
